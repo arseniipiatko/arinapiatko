@@ -1,0 +1,596 @@
+/*! HTML5 Boilerplate v8.0.0 | MIT License | https://html5boilerplate.com/ */
+
+/* main.css 2.1.0 | MIT License | https://github.com/h5bp/main.css#readme */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+  background-color: #FED059;
+  font-family: "Neucha", sans-serif;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+  resize: vertical;
+}
+
+.dec{
+  position: absolute;
+  width: 100vw;
+  height: 1082vw;
+  background: no-repeat url(../img/mobile.svg);
+  background-size: contain;
+}
+
+.telegram{
+  box-sizing: border-box;
+  position: absolute;
+  width: 11.538vw;
+  height: 10.513vw;
+  left: 14.359vw;
+  top: 27.69vw;
+  
+  background: #95B4E1;
+  border: 0.2564vw solid #000000;
+  border-radius: 3.846vw;
+
+  transition: all 0.5s;
+}
+
+.telegram img{
+  width: 55.8%;
+  height: 51.3%;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.main-picture{
+  position: absolute;
+  width: 83.33vw;
+  height: 114.1vw;
+  left: 8.46vw;
+  top: 45.9vw;
+
+  background: linear-gradient(0deg, rgba(253, 117, 145, 0.1), rgba(253, 117, 145, 0.1)), no-repeat url('../img/main-picture.png');
+  background-size: cover;
+
+  border-radius: 11.28vw;
+}
+
+.photos div{
+  box-sizing: border-box;
+
+  position: absolute;
+  width: 11.026vw;
+  height: 11.026vw;
+  background-size: contain;
+  border: 0.2564vw solid #000000;
+  border-radius: 5.513vw;
+}
+
+.dasha{
+  left: 4.615vw;
+  top: 901.795vw;
+  background: url(../img/dasha.jpg);
+}
+
+.vika{
+  left: 26.041vw;
+  top: 972.564vw;
+  background: url(../img/vika.jpg);
+}
+
+.valentin{
+  left: 4.359vw;
+  top: 1030.513vw;
+  background: url(../img/valentin.JPG);
+}
+
+@keyframes pump{
+  0%{
+    width: 11.538vw;
+    height: 10.513vw;
+    left: 14.359vw;
+    top: 27.69vw;
+    border-radius: 3.846vw;
+  }
+  12.5%{
+    width: 13.538vw;
+    height: 12.513vw;
+    left: 13.359vw;
+    top: 26.69vw;
+    border-radius: 4.6vw;
+  }
+  25%{
+    width: 11.538vw;
+    height: 10.513vw;
+    left: 14.359vw;
+    top: 27.69vw;
+    border-radius: 3.846vw;
+  }
+  37.5%{
+    width: 13.538vw;
+    height: 12.513vw;
+    left: 13.359vw;
+    top: 26.69vw;
+    border-radius: 4.6vw;
+  }
+  50%{
+    width: 11.538vw;
+    height: 10.513vw;
+    left: 14.359vw;
+    top: 27.69vw;
+    border-radius: 3.846vw;
+  }
+  100%{
+    width: 11.538vw;
+    height: 10.513vw;
+    left: 14.359vw;
+    top: 27.69vw;
+    border-radius: 3.846vw;
+  }
+}
+
+.telegram{
+  animation-name: pump;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.telegram:hover{
+    animation: unset;
+    width: 13.538vw;
+    height: 12.513vw;
+    left: 13.359vw;
+    top: 26.69vw;
+    border-radius: 4.6vw;
+    background-color: #6B92CC;
+}
+
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden,
+[hidden] {
+  display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.sr-only {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  /* 1 */
+}
+
+/*
+ * Extends the .sr-only class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.sr-only.focusable:active,
+.sr-only.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  white-space: inherit;
+  width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+  visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix::before,
+.clearfix::after {
+  content: " ";
+  display: table;
+}
+
+.clearfix::after {
+  clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 450px) {
+  .dec{
+    height: 356vw;
+    background: no-repeat url(../img/desktop.svg);
+    background-size: contain;
+  }
+
+  .telegram{
+    width: 7.431vw;
+    height: 6.389vw;
+    left: 25.417vw;
+    top: 12.569vw;
+    
+    border: 0.208vw solid #000000;
+    border-radius: 2.083vw;
+  }
+
+  .main-picture{
+    width: 31.736vw;
+    height: 41.806vw;
+    left: 9.028vw;
+    top: 22.778vw;
+
+    border-radius: 3.056vw;
+}
+
+.photos div{
+  width: 5.556vw;
+  height: 5.556vw;
+  border: 0.069vw solid #000000;
+  border-radius: 3.75vw;
+}
+
+.dasha{
+  left: 2.431vw;
+  top: 309.444vw;
+}
+
+.vika{
+  left: 62.292vw;
+  top: 304.236vw;
+}
+
+.valentin{
+  left: 47.92vw;
+  top: 331.667vw;
+}
+
+@keyframes pump{
+  0%{
+    width: 7.431vw;
+    height: 6.389vw;
+    left: 25.417vw;
+    top: 12.569vw;
+    border-radius: 2.083vw;
+  }
+  12.5%{
+    width: 8.431vw;
+    height: 7.389vw;
+    left: 24.917vw;
+    top: 12.069vw;
+    border-radius: 2.5vw;
+  }
+  25%{
+    width: 7.431vw;
+    height: 6.389vw;
+    left: 25.417vw;
+    top: 12.569vw;
+    border-radius: 2.083vw;
+  }
+  37.5%{
+    width: 8.431vw;
+    height: 7.389vw;
+    left: 24.917vw;
+    top: 12.069vw;
+    border-radius: 2.5vw;
+  }
+  50%{
+    width: 7.431vw;
+    height: 6.389vw;
+    left: 25.417vw;
+    top: 12.569vw;
+    border-radius: 2.083vw;
+  }
+  100%{
+    width: 7.431vw;
+    height: 6.389vw;
+    left: 25.417vw;
+    top: 12.569vw;
+    border-radius: 2.083vw;
+  }
+}
+
+.telegram:hover{
+    width: 8.431vw;
+    height: 7.389vw;
+    left: 24.917vw;
+    top: 12.069vw;
+    border-radius: 2.5vw;
+}
+
+@media print,
+  (-webkit-min-device-pixel-ratio: 1.25),
+  (min-resolution: 1.25dppx),
+  (min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+  *,
+  *::before,
+  *::after {
+    background: #fff !important;
+    color: #000 !important;
+    /* Black prints faster */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  a[href]::after {
+    content: " (" attr(href) ")";
+  }
+
+  abbr[title]::after {
+    content: " (" attr(title) ")";
+  }
+
+  /*
+   * Don't show links that are fragment identifiers,
+   * or use the `javascript:` pseudo protocol
+   */
+  a[href^="#"]::after,
+  a[href^="javascript:"]::after {
+    content: "";
+  }
+
+  pre {
+    white-space: pre-wrap !important;
+  }
+
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  /*
+   * Printing Tables:
+   * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
+   */
+  thead {
+    display: table-header-group;
+  }
+
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
+
+/*
+.pink-ellipse{
+  box-sizing: border-box;
+  position: absolute;
+
+  background: #FD7591;
+  border: 0.2564vw solid #000000;
+
+  border-radius: 3.846vw;
+
+  font-size: 12.3vw;
+  line-height: 14vw;
+  text-align: center;
+}
+
+.name{
+  width: 56.15vw;
+  height: 12.564vw;
+  left: -2.05vw;
+  top: 11.538vw;
+  
+  padding-left: 17vw;
+}
+
+.surname{
+  width: 74.359vw;
+  height: 12.82vw;
+  left: 33.33vw;
+  top: 25.38vw;
+
+  padding-right: 4vw;
+}
+
+.blue-ellips{
+  box-sizing: border-box;
+  position: absolute;
+  background: #95B4E1;
+  border: 0.2564vw solid #000000;
+}
+
+.decor .blue-ellips{
+  width: 7.949vw;
+  height: 37.18vw;
+  left: 61.28vw;
+  top: -14.87vw;
+  border-radius: 3.846vw;
+}
+
+.arc_1_1{
+  position: absolute;
+  width: 48.949vw;
+  height: 23.749vw;
+  left: 34.359vw;
+  top: 1.62vw;
+
+  background: no-repeat url(../img/arc_1_1.svg);
+  background-size: contain;
+}
+
+.arc_1_2{
+  position: absolute;
+  width: 11.879vw;
+  height: 23.749vw;
+  left: 8.462vw;
+  top: 17.436vw;
+
+  background: no-repeat url(../img/arc_1_2.svg);
+  background-size: contain;
+}
+
+.arc_1_3{
+  position: absolute;
+  width: 29.103vw;
+  height: 32.949vw;
+  left: 66.923vw;
+  top: 41.282vw;
+
+  background: no-repeat url(../img/arc_1_3.svg);
+  background-size: contain;
+}
+
+.picture-shadow{
+  position: absolute;
+  width: 88.72vw;
+  height: 110.26vw;
+  left: -16.69vw;
+  top: 57.69vw;
+
+  background: #FFFFFF;
+  border-radius: 11.28vw;
+}
+
+.hat .lines{
+  position: absolute;
+  width: 26.66vw;
+  height: 17.69vw;
+  left: 81.36vw;
+  top: 150.58vw;
+
+  background: no-repeat url(../img/d_lines.svg);
+  background-size: contain;
+}
+
+*/
