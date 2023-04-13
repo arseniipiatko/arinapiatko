@@ -212,16 +212,6 @@ textarea {
   animation-iteration-count: infinite;
 }
 
-.telegram:hover{
-    animation: unset;
-    width: 13.538vw;
-    height: 12.513vw;
-    left: 13.359vw;
-    top: 26.69vw;
-    border-radius: 4.6vw;
-    background-color: #6B92CC;
-}
-
 
 /*
  * Hide visually and from screen readers
@@ -399,13 +389,14 @@ textarea {
     border-radius: 2.083vw;
   }
 }
-
 .telegram:hover{
-    width: 8.431vw;
-    height: 7.389vw;
-    left: 24.917vw;
-    top: 12.069vw;
-    border-radius: 2.5vw;
+  animation: unset;
+  width: 8.431vw;
+  height: 7.389vw;
+  left: 24.917vw;
+  top: 12.069vw;
+  border-radius: 2.5vw;
+  background-color: #6B92CC;
 }
 
 @media print,
@@ -489,108 +480,3 @@ textarea {
     page-break-after: avoid;
   }
 }
-
-/*
-.pink-ellipse{
-  box-sizing: border-box;
-  position: absolute;
-
-  background: #FD7591;
-  border: 0.2564vw solid #000000;
-
-  border-radius: 3.846vw;
-
-  font-size: 12.3vw;
-  line-height: 14vw;
-  text-align: center;
-}
-
-.name{
-  width: 56.15vw;
-  height: 12.564vw;
-  left: -2.05vw;
-  top: 11.538vw;
-  
-  padding-left: 17vw;
-}
-
-.surname{
-  width: 74.359vw;
-  height: 12.82vw;
-  left: 33.33vw;
-  top: 25.38vw;
-
-  padding-right: 4vw;
-}
-
-.blue-ellips{
-  box-sizing: border-box;
-  position: absolute;
-  background: #95B4E1;
-  border: 0.2564vw solid #000000;
-}
-
-.decor .blue-ellips{
-  width: 7.949vw;
-  height: 37.18vw;
-  left: 61.28vw;
-  top: -14.87vw;
-  border-radius: 3.846vw;
-}
-
-.arc_1_1{
-  position: absolute;
-  width: 48.949vw;
-  height: 23.749vw;
-  left: 34.359vw;
-  top: 1.62vw;
-
-  background: no-repeat url(../img/arc_1_1.svg);
-  background-size: contain;
-}
-
-.arc_1_2{
-  position: absolute;
-  width: 11.879vw;
-  height: 23.749vw;
-  left: 8.462vw;
-  top: 17.436vw;
-
-  background: no-repeat url(../img/arc_1_2.svg);
-  background-size: contain;
-}
-
-.arc_1_3{
-  position: absolute;
-  width: 29.103vw;
-  height: 32.949vw;
-  left: 66.923vw;
-  top: 41.282vw;
-
-  background: no-repeat url(../img/arc_1_3.svg);
-  background-size: contain;
-}
-
-.picture-shadow{
-  position: absolute;
-  width: 88.72vw;
-  height: 110.26vw;
-  left: -16.69vw;
-  top: 57.69vw;
-
-  background: #FFFFFF;
-  border-radius: 11.28vw;
-}
-
-.hat .lines{
-  position: absolute;
-  width: 26.66vw;
-  height: 17.69vw;
-  left: 81.36vw;
-  top: 150.58vw;
-
-  background: no-repeat url(../img/d_lines.svg);
-  background-size: contain;
-}
-
-*/
