@@ -85,7 +85,7 @@ textarea {
   resize: vertical;
 }
 
-.dec{
+.dec {
   position: absolute;
   width: 100vw;
   height: 1082vw;
@@ -93,14 +93,23 @@ textarea {
   background-size: contain;
 }
 
-.telegram{
+.promo-video {
+  box-sizing: border-box;
+  position: absolute;
+  width: 90vw;
+  height: 51vw;
+  left: 9vw;
+  top: 575vw;
+}
+
+.telegram {
   box-sizing: border-box;
   position: absolute;
   width: 11.538vw;
   height: 10.513vw;
   left: 14.359vw;
   top: 27.69vw;
-  
+
   background: #95B4E1;
   border: 0.2564vw solid #000000;
   border-radius: 3.846vw;
@@ -108,7 +117,7 @@ textarea {
   transition: all 0.5s;
 }
 
-.telegram img{
+.telegram img {
   width: 55.8%;
   height: 51.3%;
 
@@ -118,7 +127,7 @@ textarea {
   transform: translate(-50%, -50%);
 }
 
-.main-picture{
+.main-picture {
   position: absolute;
   width: 83.33vw;
   height: 114.1vw;
@@ -131,7 +140,7 @@ textarea {
   border-radius: 11.28vw;
 }
 
-.photos div{
+.photos div {
   box-sizing: border-box;
 
   position: absolute;
@@ -142,61 +151,66 @@ textarea {
   border-radius: 5.513vw;
 }
 
-.dasha{
+.dasha {
   left: 4.615vw;
   top: 901.795vw;
   background: url(../img/dasha.jpg);
 }
 
-.vika{
+.vika {
   left: 26.041vw;
   top: 972.564vw;
   background: url(../img/vika.jpg);
 }
 
-.valentin{
+.valentin {
   left: 4.359vw;
   top: 1030.513vw;
   background: url(../img/valentin.JPG);
 }
 
-@keyframes pump{
-  0%{
+@keyframes pump {
+  0% {
     width: 11.538vw;
     height: 10.513vw;
     left: 14.359vw;
     top: 27.69vw;
     border-radius: 3.846vw;
   }
-  12.5%{
+
+  12.5% {
     width: 13.538vw;
     height: 12.513vw;
     left: 13.359vw;
     top: 26.69vw;
     border-radius: 4.6vw;
   }
-  25%{
+
+  25% {
     width: 11.538vw;
     height: 10.513vw;
     left: 14.359vw;
     top: 27.69vw;
     border-radius: 3.846vw;
   }
-  37.5%{
+
+  37.5% {
     width: 13.538vw;
     height: 12.513vw;
     left: 13.359vw;
     top: 26.69vw;
     border-radius: 4.6vw;
   }
-  50%{
+
+  50% {
     width: 11.538vw;
     height: 10.513vw;
     left: 14.359vw;
     top: 27.69vw;
     border-radius: 3.846vw;
   }
-  100%{
+
+  100% {
     width: 11.538vw;
     height: 10.513vw;
     left: 14.359vw;
@@ -205,7 +219,7 @@ textarea {
   }
 }
 
-.telegram{
+.telegram {
   animation-name: pump;
   animation-duration: 2s;
   animation-timing-function: linear;
@@ -297,186 +311,203 @@ textarea {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 450px) {
-  .dec{
+@media only screen and (min-width: 700px) {
+
+  .promo-video {
+    box-sizing: border-box;
+    position: absolute;
+    width: 43.8vw;
+    height: 24.6vw;
+    left: 54.2vw;
+    top: 173.5vw;
+  }
+
+  .dec {
     height: 356vw;
     background: no-repeat url(../img/desktop.svg);
     background-size: contain;
   }
 
-  .telegram{
+  .telegram {
     width: 7.431vw;
     height: 6.389vw;
     left: 25.417vw;
     top: 12.569vw;
-    
+
     border: 0.208vw solid #000000;
     border-radius: 2.083vw;
   }
 
-  .main-picture{
+  .main-picture {
     width: 31.736vw;
     height: 41.806vw;
     left: 9.028vw;
     top: 22.778vw;
 
     border-radius: 3.056vw;
-}
-
-.photos div{
-  width: 5.556vw;
-  height: 5.556vw;
-  border: 0.069vw solid #000000;
-  border-radius: 3.75vw;
-}
-
-.dasha{
-  left: 2.431vw;
-  top: 309.444vw;
-}
-
-.vika{
-  left: 62.292vw;
-  top: 304.236vw;
-}
-
-.valentin{
-  left: 47.92vw;
-  top: 331.667vw;
-}
-
-@keyframes pump{
-  0%{
-    width: 7.431vw;
-    height: 6.389vw;
-    left: 25.417vw;
-    top: 12.569vw;
-    border-radius: 2.083vw;
   }
-  12.5%{
+
+  .photos div {
+    width: 5.556vw;
+    height: 5.556vw;
+    border: 0.069vw solid #000000;
+    border-radius: 3.75vw;
+  }
+
+  .dasha {
+    left: 2.431vw;
+    top: 309.444vw;
+  }
+
+  .vika {
+    left: 62.292vw;
+    top: 304.236vw;
+  }
+
+  .valentin {
+    left: 47.92vw;
+    top: 331.667vw;
+  }
+
+  @keyframes pump {
+    0% {
+      width: 7.431vw;
+      height: 6.389vw;
+      left: 25.417vw;
+      top: 12.569vw;
+      border-radius: 2.083vw;
+    }
+
+    12.5% {
+      width: 8.431vw;
+      height: 7.389vw;
+      left: 24.917vw;
+      top: 12.069vw;
+      border-radius: 2.5vw;
+    }
+
+    25% {
+      width: 7.431vw;
+      height: 6.389vw;
+      left: 25.417vw;
+      top: 12.569vw;
+      border-radius: 2.083vw;
+    }
+
+    37.5% {
+      width: 8.431vw;
+      height: 7.389vw;
+      left: 24.917vw;
+      top: 12.069vw;
+      border-radius: 2.5vw;
+    }
+
+    50% {
+      width: 7.431vw;
+      height: 6.389vw;
+      left: 25.417vw;
+      top: 12.569vw;
+      border-radius: 2.083vw;
+    }
+
+    100% {
+      width: 7.431vw;
+      height: 6.389vw;
+      left: 25.417vw;
+      top: 12.569vw;
+      border-radius: 2.083vw;
+    }
+  }
+
+  .telegram:hover {
+    animation: unset;
     width: 8.431vw;
     height: 7.389vw;
     left: 24.917vw;
     top: 12.069vw;
     border-radius: 2.5vw;
+    background-color: #6B92CC;
   }
-  25%{
-    width: 7.431vw;
-    height: 6.389vw;
-    left: 25.417vw;
-    top: 12.569vw;
-    border-radius: 2.083vw;
-  }
-  37.5%{
-    width: 8.431vw;
-    height: 7.389vw;
-    left: 24.917vw;
-    top: 12.069vw;
-    border-radius: 2.5vw;
-  }
-  50%{
-    width: 7.431vw;
-    height: 6.389vw;
-    left: 25.417vw;
-    top: 12.569vw;
-    border-radius: 2.083vw;
-  }
-  100%{
-    width: 7.431vw;
-    height: 6.389vw;
-    left: 25.417vw;
-    top: 12.569vw;
-    border-radius: 2.083vw;
-  }
-}
-.telegram:hover{
-  animation: unset;
-  width: 8.431vw;
-  height: 7.389vw;
-  left: 24.917vw;
-  top: 12.069vw;
-  border-radius: 2.5vw;
-  background-color: #6B92CC;
-}
 
-@media print,
+  @media print,
   (-webkit-min-device-pixel-ratio: 1.25),
   (min-resolution: 1.25dppx),
   (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
-}
+    /* Style adjustments for high resolution devices */
+  }
 
-/* ==========================================================================
+  /* ==========================================================================
    Print styles.
    Inlined to avoid the additional HTTP request:
    https://www.phpied.com/delay-loading-your-print-css/
    ========================================================================== */
 
-@media print {
-  *,
-  *::before,
-  *::after {
-    background: #fff !important;
-    color: #000 !important;
-    /* Black prints faster */
-    box-shadow: none !important;
-    text-shadow: none !important;
-  }
+  @media print {
 
-  a,
-  a:visited {
-    text-decoration: underline;
-  }
+    *,
+    *::before,
+    *::after {
+      background: #fff !important;
+      color: #000 !important;
+      /* Black prints faster */
+      box-shadow: none !important;
+      text-shadow: none !important;
+    }
 
-  a[href]::after {
-    content: " (" attr(href) ")";
-  }
+    a,
+    a:visited {
+      text-decoration: underline;
+    }
 
-  abbr[title]::after {
-    content: " (" attr(title) ")";
-  }
+    a[href]::after {
+      content: " (" attr(href) ")";
+    }
 
-  /*
+    abbr[title]::after {
+      content: " (" attr(title) ")";
+    }
+
+    /*
    * Don't show links that are fragment identifiers,
    * or use the `javascript:` pseudo protocol
    */
-  a[href^="#"]::after,
-  a[href^="javascript:"]::after {
-    content: "";
-  }
+    a[href^="#"]::after,
+    a[href^="javascript:"]::after {
+      content: "";
+    }
 
-  pre {
-    white-space: pre-wrap !important;
-  }
+    pre {
+      white-space: pre-wrap !important;
+    }
 
-  pre,
-  blockquote {
-    border: 1px solid #999;
-    page-break-inside: avoid;
-  }
+    pre,
+    blockquote {
+      border: 1px solid #999;
+      page-break-inside: avoid;
+    }
 
-  /*
+    /*
    * Printing Tables:
    * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
    */
-  thead {
-    display: table-header-group;
-  }
+    thead {
+      display: table-header-group;
+    }
 
-  tr,
-  img {
-    page-break-inside: avoid;
-  }
+    tr,
+    img {
+      page-break-inside: avoid;
+    }
 
-  p,
-  h2,
-  h3 {
-    orphans: 3;
-    widows: 3;
-  }
+    p,
+    h2,
+    h3 {
+      orphans: 3;
+      widows: 3;
+    }
 
-  h2,
-  h3 {
-    page-break-after: avoid;
+    h2,
+    h3 {
+      page-break-after: avoid;
+    }
   }
-}
